@@ -8,15 +8,6 @@ const express = require("express");
 
 
  dotenv.config();
- var mysql      = require('mysql');
- var connection = mysql.createConnection({
-   host     : 'localhost',
-   user     : 'ravisawcon',
-   password : 'Raviligma',
-   database : 'test'
- });
-  
- connection.connect();
   
 //  connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
 //    if (error){throw error};
