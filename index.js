@@ -31,6 +31,5 @@ const express = require("express");
  app.use(auth);
  app.use(json());
  app.use(urlencoded({extended: false}));
-
  app.use("/users",userRouter);
- app.listen(50000);
+ app.listen(process.env.PORT||50000);
